@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+/* ---------------------
+   🔁 General Animations
+------------------------ */
+
+/* Floating animation for text */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Spinning wheel animation */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Combined spin + fade-in (used for decorative elements) */
+.spin-fade-in {
+  opacity: 0;
+  animation:
+    fadeIn 1s ease forwards,
+    spin-slow 1s linear infinite;
+}
+
+/* ----------------------
+   🌈 Gradient Text Styles
+------------------------- */
+.bg-cyan-purple-pink-gradient {
+  background: linear-gradient(to right, #06b6d4, #8b5cf6, #ec4899);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.bg-red-orange-white-gradient {
+  background: linear-gradient(to right, #ef4444, #f97316, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.bg-navbar-gradient {
+  background: linear-gradient(to right, #d8b4fe, #fb7185);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.bg-navbar-hover-gradient:hover {
+  background: linear-gradient(to right, #fb7185, #facc15);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* 💎 Additional Gradient Text for Categories */
+.text-hyper-gradient {
+  background: linear-gradient(to right, #3b82f6, #9333ea, #ffffff); /* blue-purple-white */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-sport-gradient {
+  background: linear-gradient(to right, #f97316, #facc15); /* orange-yellow */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-muscle-gradient {
+  background: linear-gradient(to right, #dc2626, #7c3aed); /* red-purple */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-luxury-gradient {
+  background: linear-gradient(to right, #d1d5db, #f3f4f6, #ffffff); /* gray-white */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ------------------------------
+   ✨ CategoryGrid Specific Styles
+--------------------------------- */
+
+/* Drop-in animation for category cards */
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-drop-in {
+  opacity: 0;
+  animation: dropIn 0.8s ease forwards;
+}
+
+/* ------------------------------
+   🎨 Category Card Enhancements
+--------------------------------- */
+
+.category-card {
+  @apply relative overflow-hidden rounded-xl shadow-lg transition-transform duration-300;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: linear-gradient(black, black), linear-gradient(135deg, #8b5cf6, #ec4899, #06b6d4);
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 4px rgba(139, 92, 246, 0.5),
+              0 0 30px 6px rgba(236, 72, 153, 0.4);
+  background-image: linear-gradient(black, black), linear-gradient(135deg, #d946ef, #ec4899, #22d3ee);
+  border-width: 2px;
+}
+
+/* Category image title wrapper */
+.category-title-wrapper {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 1rem 1rem;
+}
+
+/* Gradient title text */
+.category-title-gradient {
+  background: linear-gradient(to right, #8b5cf6, #ec4899, #06b6d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 105, 180, 0.3); }
+  50% { transform: scale(1.01); box-shadow: 0 0 25px rgba(255, 105, 180, 0.5); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+/* ------------------------------
+   ✨ Extra Glow + Fade Effects
+--------------------------------- */
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #ff00ff44; }
+  50% { box-shadow: 0 0 20px #ff00ff88; }
+  100% { box-shadow: 0 0 10px #ff00ff44; }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
