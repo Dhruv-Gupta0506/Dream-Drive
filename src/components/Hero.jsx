@@ -47,9 +47,9 @@ const Hero = () => {
         Your Dream Garage In Style
       </p>
 
-      {/* Bottom explore & arrow */}
+      {/* Bottom explore & arrow slightly above bottom */}
       <div
-        className="relative z-10 mt-8 fade-in flex flex-col items-center"
+        className="absolute bottom-25 z-10 fade-in flex flex-col items-center"
         style={{ animationDelay: '4.5s' }}
       >
         <p
