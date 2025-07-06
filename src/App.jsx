@@ -6,19 +6,23 @@ import Garage from './pages/Garage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CategoryPage from './pages/CategoryPage';
+import ScrollToTop from './components/ScrollToTop'; // ✅ Import it
 
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-        <Route path="/garage" element={<Garage />} />
-        <Route path="/category/:type" element={<CategoryPage />} />
-      </Routes>
-    </AnimatePresence>
+    <>
+      <ScrollToTop /> {/* ✅ Add here inside animated routes */}
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/garage" element={<Garage />} />
+          <Route path="/category/:type" element={<CategoryPage />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
