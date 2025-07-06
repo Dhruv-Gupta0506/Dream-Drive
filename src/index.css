@@ -1,5 +1,11 @@
 @import "tailwindcss";
+body {
+  font-family: 'Inter', sans-serif;
+}
 
+h1, h2, h3, .fancy-font {
+  font-family: 'Space Grotesk', sans-serif;
+}
 /* ---------------------
    🔁 General Animations
 ------------------------ */

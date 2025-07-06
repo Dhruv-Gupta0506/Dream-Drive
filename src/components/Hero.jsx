@@ -18,7 +18,10 @@ const Hero = () => {
         />
 
         {/* Hero text */}
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold animate-float flex space-x-1 flex-wrap justify-center">
+        <h1
+          className="text-2xl sm:text-3xl md:text-5xl font-bold animate-float flex space-x-1 flex-wrap justify-center"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+        >
           <span className="fade-in bg-cyan-purple-pink-gradient" style={{ animationDelay: '1.0s' }}>Welcome</span>
           <span className="fade-in bg-cyan-purple-pink-gradient" style={{ animationDelay: '2.0s' }}>To</span>
           <span className="fade-in bg-cyan-purple-pink-gradient" style={{ animationDelay: '3.0s' }}>Dream Drive</span>
@@ -36,7 +39,10 @@ const Hero = () => {
       {/* Subtitle */}
       <p
         className="text-base sm:text-xl md:text-3xl mb-6 fade-in bg-red-orange-white-gradient bg-clip-text text-transparent leading-normal max-w-sm sm:max-w-full"
-        style={{ animationDelay: '3.5s' }}
+        style={{
+          animationDelay: '3.5s',
+          fontFamily: "'Inter', sans-serif"
+        }}
       >
         Your Dream Garage In Style
       </p>
@@ -46,7 +52,10 @@ const Hero = () => {
         className="relative z-10 mt-8 fade-in flex flex-col items-center"
         style={{ animationDelay: '4.5s' }}
       >
-        <p className="text-lg md:text-2xl font-medium bg-navbar-gradient hover:bg-navbar-hover-gradient bg-clip-text text-transparent mb-2">
+        <p
+          className="text-lg md:text-2xl font-medium bg-navbar-gradient hover:bg-navbar-hover-gradient bg-clip-text text-transparent mb-2"
+          style={{ fontFamily: "'Inter', sans-serif" }}
+        >
           Explore
         </p>
         <ScrollArrow targetId="categories" />

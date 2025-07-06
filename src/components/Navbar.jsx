@@ -7,7 +7,7 @@ import wheelIcon from "@/assets/wheel.jpeg";
 const navItems = [
   { name: "Home", to: "/" },
   { name: "Categories", to: "/categories" },
-  { name: "Your Dream Garage", to: "/garage" }, // ✅ changed from /form to /garage
+  { name: "Your Dream Garage", to: "/garage" },
   { name: "Contact", to: "/contact" },
 ];
 
@@ -30,7 +30,7 @@ export const Navbar = () => {
           : "py-5 bg-black"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between" style={{ fontFamily: "'Inter', sans-serif" }}>
         {/* Logo */}
         <Link to="/" className="font-bold flex items-center space-x-2 ml-6">
           <img
@@ -46,6 +46,7 @@ export const Navbar = () => {
               "relative z-10 flex space-x-1 items-center transition-all duration-300",
               isScrolled ? "text-xl md:text-2xl" : "text-2xl md:text-3xl"
             )}
+            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent" style={{ animation: "float 3s ease-in-out infinite" }}>
               Dream
@@ -68,6 +69,7 @@ export const Navbar = () => {
                 "hover:from-pink-400 hover:to-yellow-400 hover:text-transparent hover:shadow-lg",
                 item.name === "Contact" ? "mr-4" : ""
               )}
+              style={{ fontFamily: "'Inter', sans-serif" }}
             >
               {item.name}
             </Link>
@@ -89,6 +91,7 @@ export const Navbar = () => {
             "fixed top-0 right-0 h-full w-3/4 sm:w-1/2 bg-black z-40 transform transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8",
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           )}
+          style={{ fontFamily: "'Inter', sans-serif" }}
         >
           {navItems.map((item, idx) => (
             <Link
