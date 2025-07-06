@@ -38,10 +38,10 @@ const Hero = () => {
 
       {/* Subtitle */}
       <p
-        className="text-base sm:text-xl md:text-3xl mb-6 fade-in bg-red-orange-white-gradient bg-clip-text text-transparent leading-normal max-w-sm sm:max-w-full"
+        className="text-base sm:text-xl md:text-3xl mb-6 fade-in bg-red-orange-white-gradient bg-clip-text text-transparent leading-normal max-w-sm sm:max-w-full font-semibold tracking-wide"
         style={{
           animationDelay: '3.5s',
-          fontFamily: "'Inter', sans-serif"
+          fontFamily: "'Space Grotesk', sans-serif"
         }}
       >
         Your Dream Garage In Style
