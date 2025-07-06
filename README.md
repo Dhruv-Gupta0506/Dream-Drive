@@ -1,12 +1,32 @@
-# React + Vite
+# 🚗 Dream Drive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Dream Drive** — Your Dream Garage In Style.
 
-Currently, two official plugins are available:
+An elegant and responsive car catalog web app built using **React**, **Vite**, and **Tailwind CSS**, deployed seamlessly on **Vercel**. Dream Drive lets users explore a range of dream vehicles with a slick UI, dark theme, and modern animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo**: [https://dreamdrive.vercel.app](https://dreamdrive.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- ⚡ Fast and responsive UI with **Vite + React**
+- 🎨 Styled using **Tailwind CSS**
+- 🌙 Dark mode optimized interface
+- 🔍 Filterable car categories
+- 🔗 Deployed on **Vercel**
+- 📱 Mobile-first design
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Tools / Libraries          |
+|-----------------|----------------------------|
+| Frontend        | React, Vite                |
+| Styling         | Tailwind CSS               |
+| Animations      | Framer Motion              |
+| Deployment      | Vercel                     |
+| Version Control | Git, GitHub                |
+
+
